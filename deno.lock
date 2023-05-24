@@ -12,5 +12,16 @@
     "https://deno.land/std@0.187.0/async/retry.ts": "dd19d93033d8eaddbfcb7654c0366e9d3b0a21448bdb06eba4a7d8a8cf936a92",
     "https://deno.land/std@0.187.0/async/tee.ts": "47e42d35f622650b02234d43803d0383a89eb4387e1b83b5a40106d18ae36757",
     "https://deno.land/std@0.187.0/http/server.ts": "1b23463b5b36e4eebc495417f6af47a6f7d52e3294827a1226d2a1aab23d9d20"
+  },
+  "npm": {
+    "specifiers": {
+      "isbot": "isbot@3.6.10"
+    },
+    "packages": {
+      "isbot@3.6.10": {
+        "integrity": "sha512-+I+2998oyP4oW9+OTQD8TS1r9P6wv10yejukj+Ksj3+UR5pUhsZN3f8W7ysq0p1qxpOVNbl5mCuv0bCaF8y5iQ==",
+        "dependencies": {}
+      }
+    }
   }
 }
