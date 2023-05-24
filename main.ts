@@ -4,6 +4,7 @@ const handler: Handler = (req: Request, connInfo: ConnInfo): Response => {
   const headers = req.headers;
   const ip = headers.get("x-real-ip") || headers.get("x-forwarded-for") || (connInfo.remoteAddr as Deno.NetAddr).hostname;
   console.log(ip);
+  console.log(headers.get("user-agent"));
   return new Response(null, {
     status: 302,
     headers: new Headers({
