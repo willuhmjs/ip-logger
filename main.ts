@@ -9,7 +9,7 @@ import * as Colors from "https://deno.land/std@0.188.0/fmt/colors.ts";
 import { Command } from "https://deno.land/x/cliffy@v0.25.7/command/mod.ts";
 
 let cliOptions: { less?: true|undefined; botless?: true|undefined; output?: string|undefined; };
-let cliUrl = "https://example.com";
+let cliUrl = Deno.env.get("URL") || "https://example.com"
 await new Command()
   .name("cliffy")
   .version("0.1.0")

@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --watch --allow-net --allow-write main.ts",
-    "build": "deno compile --allow-net --allow-write --output iplogger main.ts" 
+    "dev": "deno run --watch --allow-net --allow-write --allow-env main.ts",
+    "build": "deno compile --allow-net --allow-write --allow-env --output iplogger main.ts" 
   }
 }
