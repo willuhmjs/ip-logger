@@ -3,8 +3,8 @@ import {
   Handler,
   serve,
 } from "https://deno.land/std@0.187.0/http/server.ts";
-import isbot from "https://esm.sh/isbot";
-import * as Colors from "https://deno.land/std/fmt/colors.ts";
+import isbot from "https://esm.sh/isbot@3.6.10";
+import * as Colors from "https://deno.land/std@0.188.0/fmt/colors.ts";
 
 const logIp = async (req: Request, connInfo: ConnInfo) => {
   const ip = req.headers.get("x-real-ip") ||
