@@ -21,7 +21,7 @@ await new Command()
   })
   .parse(Deno.args);
 
-let ipLogs = [];
+let ipLogs: any = [];
 
 const logIp = async (req: Request, connInfo: ConnInfo) => {
   const ip = req.headers.get("x-real-ip") ||
@@ -51,7 +51,7 @@ const handler: Handler = async (
   connInfo: ConnInfo,
 ): Promise<Response> => {
   try {
-    const em = await logIp(req, connInfo);
+    const em = await logIp(req, connInfo) || "";
     ipLogs.push(Colors.stripColor(em));
     console.log(em);
   } catch (e) {
