@@ -1,3 +1,3 @@
 # ip-logger
 
-An IP logger with Deno.
+An IP logger written with Deno.
