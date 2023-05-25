@@ -63,7 +63,7 @@ const handler: Handler = async (
   return new Response(null, {
     status: 302,
     headers: new Headers({
-      "Location": "https://example.com",
+      "Location": cliUrl,
     }),
   });
 };
