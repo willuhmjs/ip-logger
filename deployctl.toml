@@ -1,2 +1,0 @@
-[exec]
-command = "deno task dev https://discord.com"
