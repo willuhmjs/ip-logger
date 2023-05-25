@@ -50,9 +50,13 @@ const handler: Handler = async (
   req: Request,
   connInfo: ConnInfo,
 ): Promise<Response> => {
-  const em = await logIp(req, connInfo);
-  ipLogs.push(Colors.stripColor(em));
-  console.log(em);
+  try {
+    const em = await logIp(req, connInfo);
+    ipLogs.push(Colors.stripColor(em));
+    console.log(em);
+  } catch (e) {
+    console.error(e);
+  }
   return new Response(null, {
     status: 302,
     headers: new Headers({
